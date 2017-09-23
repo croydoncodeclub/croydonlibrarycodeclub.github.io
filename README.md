@@ -13,3 +13,15 @@ Hibernate does not currently work, so to force a shutdown when the lid is closed
 ```
 HandleLidSwitch=poweroff
 ```
+
+# Setting up git
+
+Cloning StudentFiles in the home directory, enter:
+```
+git clone git://github.com/CroydonLibraryCodeClub/StudentFiles.git
+```
+
+If git has already been cloned using http, you can reconfigure it to use ssh with the command:
+```
+git remote set-url origin git@github.com:CroydonLibraryCodeClub/StudentFiles.git
+```
