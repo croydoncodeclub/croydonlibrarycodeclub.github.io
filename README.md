@@ -21,7 +21,7 @@ Cloning StudentFiles in the home directory, enter:
 git clone git://github.com/CroydonLibraryCodeClub/StudentFiles.git
 ```
 
-If git has already been cloned using http, you can reconfigure it to use ssh with the command:
+Reconfigure the remote to use ssh with the command:
 ```
 git remote set-url origin git@github.com:CroydonLibraryCodeClub/StudentFiles.git
 ```
@@ -37,3 +37,10 @@ eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa
 ```
 Copy the public key `~/.ssh/id_rsa` to GitHub.
+
+Setting the git user name and email:
+```
+git config --global user.email "croydoncodeclub@powered-up-games.com"
+git config --global user.name "cc01"
+```
+
