@@ -25,3 +25,15 @@ If git has already been cloned using http, you can reconfigure it to use ssh wit
 ```
 git remote set-url origin git@github.com:CroydonLibraryCodeClub/StudentFiles.git
 ```
+
+Generate a key for the machine:
+```
+ssh-keygen -t rsa -b 4096 -C "croydoncodeclub@powered-up-games.com"
+```
+
+Adding your SSH key to the ssh-agent:
+```
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+```
+Copy the public key `~/.ssh/id_rsa` to GitHub.
