@@ -36,7 +36,7 @@ Adding your SSH key to the ssh-agent:
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa
 ```
-Copy the public key `~/.ssh/id_rsa` to GitHub.
+Copy the public key `~/.ssh/id_rsa.pub` to GitHub.
 
 Setting the git user name and email:
 ```
