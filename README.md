@@ -43,4 +43,27 @@ Setting the git user name and email:
 git config --global user.email "croydoncodeclub@powered-up-games.com"
 git config --global user.name "cc01"
 ```
+# Installing sonic-pi
+```
+yaourt -Syu sonic-pi jack2 cadence
+```
 
+# Fixing audio on Scratch2 and flashplugin
+
+Change `./asoundrc` pcm default to:
+```
+# Use PulseAudio by default
+pcm.!default {
+  type pulse
+  fallback "sysdefault"
+  hint {
+    show on
+    description "Default ALSA Output (currently PulseAudio Sound Server)"
+  }
+}
+
+ctl.!default {
+  type pulse
+  fallback "sysdefault"
+}
+```
