@@ -45,25 +45,13 @@ git config --global user.name "cc01"
 ```
 # Installing sonic-pi
 ```
-yaourt -Syu sonic-pi jack2 cadence
+yaourt -Syua sonic-pi jack qjackctl
+```
+# Fixing desktop text shadow
+```
+xfconf-query -c xfce4-desktop -p /desktop-icons/center-text -n -t bool -s false
 ```
 
 # Fixing audio on Scratch2 and flashplugin
 
-Change `./asoundrc` pcm default to:
-```
-# Use PulseAudio by default
-pcm.!default {
-  type pulse
-  fallback "sysdefault"
-  hint {
-    show on
-    description "Default ALSA Output (currently PulseAudio Sound Server)"
-  }
-}
-
-ctl.!default {
-  type pulse
-  fallback "sysdefault"
-}
-```
+Remove `./asoundrc`
