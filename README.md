@@ -57,5 +57,6 @@ xfconf-query -c xfce4-desktop -p /desktop-icons/center-text -n -t bool -s false
 Remove `./asoundrc`
 
 # Fixing engrampa errors
-
+```
 yaourt -R engrampa-thunar-plugin
+```
